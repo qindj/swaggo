@@ -25,7 +25,7 @@ func TestOverridesGetTypeSchemaV3(t *testing.T) {
 
 		s, err := p.getTypeSchemaV3("sql.NullString", nil, false)
 		if assert.NoError(t, err) {
-			assert.Truef(t, s.Spec.Type[0] == "string", "type sql.NullString should be overridden by string")
+			assert.Truef(t, (*s.Spec.Type)[0] == "string", "type sql.NullString should be overridden by string")
 		}
 	})
 

@@ -792,7 +792,7 @@ func TestOperation_ParseParamCommentV3(t *testing.T) {
 								Spec: &spec.Schema{
 									JsonSchema: spec.JsonSchema{
 										JsonSchemaCore: spec.JsonSchemaCore{
-											Type: typeInteger,
+											Type: &typeInteger,
 										},
 									},
 								},
@@ -826,7 +826,7 @@ func TestOperation_ParseParamCommentV3(t *testing.T) {
 								Spec: &spec.Schema{
 									JsonSchema: spec.JsonSchema{
 										JsonSchemaCore: spec.JsonSchemaCore{
-											Type: typeString,
+											Type: &typeString,
 										},
 									},
 								},
@@ -897,7 +897,7 @@ func TestOperation_ParseParamCommentV3(t *testing.T) {
 						Spec: &spec.Schema{
 							JsonSchema: spec.JsonSchema{
 								JsonSchemaCore: spec.JsonSchemaCore{
-									Type: typeString,
+									Type: &typeString,
 								},
 							},
 						},
@@ -914,7 +914,7 @@ func TestOperation_ParseParamCommentV3(t *testing.T) {
 						Spec: &spec.Schema{
 							JsonSchema: spec.JsonSchema{
 								JsonSchemaCore: spec.JsonSchemaCore{
-									Type: typeString,
+									Type: &typeString,
 								},
 							},
 						},
